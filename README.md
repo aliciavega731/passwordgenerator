@@ -21,6 +21,7 @@ For this assignment, we were required to put our knowledge of Javascript to the 
 * THEN the password is either displayed in an alert or written to the page
 
 ## Website
----
+
+https://aliciavega731.github.io/passwordgenerator/
 
 ![alt text](./passwordgenerator.png "Password Generator")
