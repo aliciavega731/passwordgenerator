@@ -1,4 +1,4 @@
-//Generating the password and assigned four variables for the function
+// Generating the password and assigned four variables for the function
 // Assigning variables 'var' instead of 'const' or 'let' to mirror what we're learning in class
 function generatePassword() {
   var upperCase = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
@@ -7,6 +7,7 @@ function generatePassword() {
   var symbol = ('!', '@', '#', '$', '%', '^', '&', '*', '-', '+', '<', '>', '?', '/');
 
   var password = '';
+  
 // Prompt for user with conditionals to maintaing the correct parameters
   var passwordPrompt = prompt('Type in the length of your desired password (8-128 characters).');
   
