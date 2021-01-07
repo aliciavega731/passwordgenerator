@@ -20,7 +20,8 @@ For this assignment, we were required to put our knowledge of Javascript to the 
 * WHEN the password is generated
 * THEN the password is either displayed in an alert or written to the page
 
-## Website
----
-
 ![alt text](./passwordgenerator.png "Password Generator")
+
+## Deployed application
+
+https://aliciavega731.github.io/passwordgenerator/
