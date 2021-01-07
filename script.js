@@ -1,10 +1,11 @@
 // Generating the password and assigned four variables for the function
 // Assigning variables 'var' instead of 'const' or 'let' to mirror what we're learning in class
+// Square backets for arrays: []
 function generatePassword() {
-  var upperCase = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-  var lowerCase = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
-  var number = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
-  var symbol = ('!', '@', '#', '$', '%', '^', '&', '*', '-', '+', '<', '>', '?', '/');
+  var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+  var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  var symbol = ['!', '@', '#', '$', '%', '^', '&', '*', '-', '+', '<', '>', '?', '/'];
 
   var password = '';
   
@@ -57,6 +58,18 @@ function generatePassword() {
     alert('Pick at least ONE option!');
     return '';
   };
+
+  for (i = 0; i < passwordPrompt; i++) {
+// Pick a random value from passwordOptions
+    var randomArray = passwordOptions[Math.floor(Math.random() * passwordOptions.length)];
+
+// Pick a value randomly from the selected array
+    var randomValue = randomArray[Math.floor(Math.random() * randomArray.length)];
+// Push the random value to the password string
+    password += randomValue;
+  }
+  
+  return password;
 };
 
 // Assignment code
