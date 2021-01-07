@@ -2,7 +2,7 @@
 
 For this assignment, we were required to put our knowledge of Javascript to the test by creating a web-based password generator. My submission is Javascript-heavy with variables, functions and arrays written in. 
 
-## The assignment criteria include: 
+## The assignment criteria includes: 
 
 * GIVEN I need a new, secure password
 * WHEN I click the button to generate a password
